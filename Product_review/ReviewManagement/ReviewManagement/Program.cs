@@ -30,7 +30,8 @@ namespace ReviewManagement
             //    Console.WriteLine("PRODUCT_ID-" + result.ProductID + "  " + "USER_ID-" + result.UserID + "  " + "RATING-" + result.Rating + "  " + "REVIEW-" + result.Review);
             //}
             Management management = new Management();
-            management.TopRecords(list);
+            //management.TopRecords(list);
+            management.Retrive(list);
         }
     }
 }
