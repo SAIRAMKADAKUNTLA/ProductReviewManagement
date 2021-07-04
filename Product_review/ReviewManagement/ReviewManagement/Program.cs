@@ -25,10 +25,12 @@ namespace ReviewManagement
             new ProductReview() { ProductID = 13, UserID = 34, Rating = 3, Review = "BAD" },
             new ProductReview() { ProductID = 14, UserID = 35, Rating = 2, Review = "BAD" }
             };
-            foreach(var result in list)
-            {
-                Console.WriteLine("PRODUCT_ID-"+result.ProductID+"  "+"USER_ID-"+result.UserID+"  "+"RATING-"+result.Rating+"  "+"REVIEW-"+result.Review );
-            }
+            //foreach (var result in list)
+            //{
+            //    Console.WriteLine("PRODUCT_ID-" + result.ProductID + "  " + "USER_ID-" + result.UserID + "  " + "RATING-" + result.Rating + "  " + "REVIEW-" + result.Review);
+            //}
+            Management management = new Management();
+            management.TopRecords(list);
         }
     }
 }
