@@ -31,7 +31,8 @@ namespace ReviewManagement
             //}
             Management management = new Management();
             //management.TopRecords(list);
-            management.Retrive(list);
+            //management.Retrive(list);
+            management.Count(list);
         }
     }
 }
